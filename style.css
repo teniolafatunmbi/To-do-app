@@ -35,3 +35,12 @@ header {
 li:hover {
     transform: scale(1.1);
 }
+
+.delete {
+    display: none;
+}
+
+.done {
+    background: green !important;
+    color: blue;
+}
