@@ -13,11 +13,20 @@ const addItems = () => {
 	ul.appendChild(li); //adds the list element to the list of to-dos
 	input.value = ""; //sets the input value to null
 
+	//ADD CHECKBOX
+	var check = document.createElement("input");
+	check.type = "checkbox";
+	li.appendChild(check);
+	// END ADD CHECKBOX
+
+	//ADD A CROSSOUT FUNCTION FOR COMPLETED TASKS
 	const crossOut = () => {
 		li.classList.toggle("done");
 	}
-	li.addEventListener("click", crossOut);
+	//END ADD CROSSOUT FUNCTION
+	check.addEventListener("click", crossOut);
 
+	//ADD deleteListItem FUNCTION TO REMOVE DELETED TASKS
 	const deleteListItem = () => {
 		li.classList.add("delete");
 	}
@@ -27,13 +36,8 @@ const addItems = () => {
 	button1.appendChild(document.createTextNode("X"));
 	li.appendChild(button1);
 	button1.addEventListener("click", deleteListItem);
-	//END ADD DELETE BUTTON
-
-	
+	//END ADD DELETE BUTTON	
 }
-
-
-
 
 //function to add items to the to-do
 const addItemsAfterClick = () => {
@@ -48,9 +52,6 @@ const addItemsAfterKeypress = (event) => {
 		addItems();
 	}
 }
-
-
-
 
 button.addEventListener("click", addItemsAfterClick);
 
