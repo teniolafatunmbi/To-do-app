@@ -32,9 +32,15 @@ header {
     padding: 2em;
 
 }
-li:hover {
-    transform: scale(1.1);
+
+li > button {
+    position: relative;
+    margin-left: 30px;
+    background-color: lightcoral;
+    border-radius: 5px;
+    border-color: lightcoral;
 }
+
 
 .delete {
     display: none;
@@ -43,4 +49,5 @@ li:hover {
 .done {
     background: green !important;
     color: blue;
+    
 }
