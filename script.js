@@ -8,13 +8,13 @@ const inputLength = () => {return input.value.length;}
 
 //function to add items into the list
 const addItems = () => {
-	var li = document.createElement("li"); //creates a list element<li>
+	let li = document.createElement("li"); //creates a list element<li>
 	li.appendChild(document.createTextNode(input.value));//add the inputs to the list element
 	ul.appendChild(li); //adds the list element to the list of to-dos
 	input.value = ""; //sets the input value to null
 
 	//ADD CHECKBOX
-	var check = document.createElement("input");
+	let check = document.createElement("input");
 	check.type = "checkbox";
 	li.appendChild(check);
 	// END ADD CHECKBOX
