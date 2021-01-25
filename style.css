@@ -1,8 +1,9 @@
 body {
     background: rgb(235, 216, 216);
+    display: flex;
 }
-header {
-    text-align: center;
+#header {
+    margin: 0 25em;
     font-family: fantasy;
 }
 
@@ -35,9 +36,10 @@ header {
 
 li > button {
     position: relative;
+    padding: 5px;
     margin-left: 30px;
     background-color: lightcoral;
-    border-radius: 5px;
+    border-radius: 50px;
     border-color: lightcoral;
 }
 
@@ -49,5 +51,6 @@ li > button {
 .done {
     background: green !important;
     color: blue;
+    border-radius: 5px;
     
 }
