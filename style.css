@@ -44,10 +44,10 @@ body {
 .list {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
     background-color: rgb(175, 54, 54);
     border-radius: 10px;
-    padding: 2em;
-    width: 100%
+    box-sizing: content-box;
 
 }
 
